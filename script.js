@@ -70,3 +70,11 @@ btn.addEventListener('click',()=>{
   text=document.querySelector('.hid')
   text.style.display='block'
 })
+
+// hamburger
+const toggleButton = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleButton.addEventListener('click',()=>{
+      navLinks.classList.toggle('active');
+});

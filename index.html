@@ -3,6 +3,7 @@
 <head>
   <title>Arbaz</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 <body>
   <!--header-->
@@ -12,11 +13,16 @@
     </div>
     <nav>
         <ul class="nav-links">
-          <li class="nav-child">Home</li>
-          <li class="nav-child">About</li>
-          <li class="nav-child">Contact</li>
+          <li class="nav-child"><a class="nav-child" href="#">Home</a></li>
+          <li class="nav-child"><a class="nav-child" href="#about_me">About</a></li>
+          <li class="nav-child"><a class="nav-child" href="#contact_page">Contact</a></li>
         </ul>
     </nav>
+                <!--hamberger icon-->
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+
+                  <i class="fa-solid fa-bars"></i>
+              </a>
   </header>
 
   <!--intro section-->
@@ -55,14 +61,14 @@
   </div>
 
   <!--About me-->
-  <section class="aboutMe">
+  <section id="about_me" class="aboutMe">
     <a href="#">
     <h1 class="about-head">About Me</h1>
     </a>
     <p class="about-para">
         Hi there! I'm Arbaz Essaq Khan, a passionate and driven professional with a knack for problem-solving and a heart for serving others. I graduated with a B.Tech in Computer Science from the University of Kashmir in 2023.
-        <button class="read_more">Read more</button>
     </p>
+    <button class="read_more">Read more</button>
     
     <span class="hid">
     <br>
@@ -100,10 +106,25 @@
     
 
     </div>
-  
-
   </section>
-   
-  <script src="script.js"></script>
+
+  <!--contact-->
+  <form id="contact_page" class="contac">
+    <h2 class="contac-head">Contact Me</h2>
+      <label for="name">Your Name:</label>
+      <input id="nam" name="name" type="text" required>
+      <br>
+      <label for="email">Your Email:</label>
+      <input id="email" name="email" type="email" required>
+      <br>
+      <label id="l-msg" for="name">Message:</label>
+      <textarea name="msg" id="msg"rows="4"required></textarea>
+      <br>
+      <button class="submit-btn" type="submit">submit</button>
+
+  </form>
+       <script src="https://kit.fontawesome.com/d14f6bc67a.js" crossorigin="anonymous"></script>
+  <script src="script.js">
+  </script>
 </body>
 </html>
